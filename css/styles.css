@@ -181,7 +181,7 @@ header{
 /* acerca de  */
 .acerca-de{
     width: 100%;
-    padding: 50px;
+    padding: 0px 50px 0px 50px;
     margin-top: 100px;
 }
 
@@ -194,6 +194,14 @@ header{
 .acerca-de .info{
     width: 70%;
     padding: 0px 30px;
+    text-align: center;
+}
+
+.acerca-de  .info a i{
+    font-size: 40px;
+}
+.acerca-de  .info a .fa-facebook{
+    color: blue
 }
 .acerca-img{
     width: 40%;
@@ -223,16 +231,19 @@ header{
 
 .team-pets{
     width: 100%;
-    padding: 50px 0px;
+    padding: 0;
     background: #fff;
 }
 .team-pets h2{
     display: flex;
     justify-content: center;
-    margin:50px 0px;
+    margin:10px 0px;
     font-size: 50px;
     color: #9e579d;
     font-weight: 300;
+}
+.team-pets p{
+    text-align:center;
 }
 
 .content-cards{
@@ -305,7 +316,7 @@ header{
 .us h2{
     display: flex;
     justify-content: center;
-    margin:50px 0px;
+    /* margin:50px 0px; */
     font-size: 50px;
     color: #9e579d;
     font-weight: 300;
@@ -467,12 +478,12 @@ header{
 
 @media only screen and (max-width: 912px){
 
-    .acerca-de{
+    /* .acerca-de{
         padding: 20px;
-    }
+    } */
     .acerca-img{
         width: 50%;
-        height: 500px;
+        /* height: 500px; */
     }
     .acerca-de .info h2{
         font-size: 15px;
@@ -490,9 +501,9 @@ header{
     }
 
     
-    .contact{
+    /* .contact{
         margin-top: 20%;
-    }
+    } */
     .contact .boxForm{
         width: 95%;
     }
@@ -509,13 +520,32 @@ header{
 
 
 @media only screen and (max-width: 700px){
-    .acerca-img{width: 100%;height: 500px;}
+    .acerca-img{width: 100%;height: 30%;}
     .acerca-de .right{width: 100%;display: block;}
     .acerca-de .info{width: 100%;}
     .acerca-de .right .info{margin-top: 30px;}
-    .content-cards .card{width: 100%; height: 400px;}
+    .acerca-de .right .info h2{font-size: 20px;}
+    .content-cards .card{width: 30%; height: 200px;}
+    .card-content h4{font-size: 10px;}
+    .card-content p{font-size: 8px;overflow-y: scroll;}
     .boxForm input {width: 100%; height: 50px;}
-
-    
+    .welcome {transform: scale(0.5);}
+    .logo img {transform: scale(0.8);}
+    .bar-icon span {transform: scale(0.8)}
+    .bar-icon::before {transform: scale(0.8);}
+    .team-pets h2 {font-size: 2rem;}
+    .us h2 {font-size: 2rem;}
+    .us p {font-size: 0.8rem;}
+    .us p::before{width: 2rem;height: 2rem;font-size: 2rem;line-height: 2rem;}
+    .contact h2 {font-size: medium;}
+    .contact label, input, button{font-size: smaller;}
+    .footer_new h4{margin-bottom: 0;}
+    footer h4, p{font-size: smaller;}
+    .footer_new {flex-direction: column;align-items: center;}
+    .footer_new div:nth-child(1){margin-bottom: 5px;}
+    .acerca-img {width:50%}
+    .acerca-de .right {display: flex; flex-direction: column; align-items: center;}
+    .info p{ font-size: 0.8rem}
+    .content-cards{margin:5px;}
     
 }
